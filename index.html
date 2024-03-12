@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="OceaniaOracle.css">
+    <link rel="stylesheet" href="ClaudeNYT.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="language-selector">
@@ -25,8 +26,8 @@
         
     <nav>
         <ul>
-            <li><button id="oceania">Oceania</button></li>
-            <li><button id="the-world">The World</button></li>
+            <li><button id="oceania">Real World Connections</button></li>
+            <li><button id="the-world">Articles</button></li>
             <li><button id="essential-questions">Essential Questions</button></li>
             <li><button id="statistics">Statistics</button></li>
             <li><button id="activities">Activities</button></li>
@@ -34,39 +35,18 @@
             <li><button id="videos-photography">Videos &amp; Photography</button></li>
         </ul>
     </nav>
-
-    <main>
-        <div class="principles">
-            <h3><b>War is Peace</b></h3>
-            <h3><b>Freedom is Slavery</b></h3>
-            <h3><b>Ignorance is Strength</b></h3>
+    <hr>
+        <div id="propoganda" class="principles">
+            <p><h3>War is Peace | Freedom is Slavery | Ignorance is Strength | War is Peace | Freedom is Slavery | Ignorance is Strength</h3></p>
         </div>
-        <div class="big-brother">
-            <img src="img/BigBrother.png" alt="Big Brother" width="300" height="300"/>
-            <p><h4><b>Big Brother is Watching You</b></h4></p>
-        </div>
-    
+    <hr>
+    <main>    
     <section class="article">
         <article>
-            <h2>Popularity of Cooking Continues Growth at WHS</h2>
-            <p>Author: Declan Funk</p>
+            <h2>Article Title</h2>
+            <p>Article Author</p>
             <img src="img/BigBrother.png" alt="Chocolate Ration Graph">
-            <p>At WHS the cooking elective is very popular among students trying to further their cooking abilities, or begin learning how to cook, due to the program’s ability to inspire students’ creativity and ability to collaborate in groups, but still teaches them to learn by themselves
-                “Cooking is a fun class and it also is a good skill to have, especially when you need to be able to cook for yourself to be healthier,” freshman Riley Ortega said.
-                Currently, there are four different cooking classes that can be taken: Creative cooking, Cooking for fitness, Regional US Cuisine and International cuisine. Each Different cooking class can each be taken once during your 4 years at Whs, with each running for one semester.
-                Cooking is a class meant to be dynamic due to the different level of skills coming into the class.
-                “Students come in with varied levels of kitchen skills and knowledge, with some students, the beginning is how to boil water. Chef Feller said "With other students, they only need the space and time to practice what they already know with very little guidance from me.” 
-               These classes are designed for students to learn at least basic cooking skills while also being safe in the kitchen.      
-                This is something that a large number of students want to know more about coming into high school.
-                “I wanted to know more about how to cook because I thought it would be helpful,” freshman Chelian Subbiah said.
-                One other factor that has led to cooking's popularity is how the class is constructed. 
-                Students are given a whole class block to make a dish, which also allows for a focused and committed environment.
-               “I've started helping with dinner a couple times, and I plan on making some dishes that I've learned how to make in cooking. I like it because it feels good to be independent and helpful,” freshman Colin Bradley said.
-              Many students enjoy the opportunities of cooking so they may take the different classes over multiple years.
-                “I’ve taken Creative cooking, regional US Cuisine and International Cuisine,” senior Anthony Jorajuria said. “I've wanted to be able to support myself and other people with cooking and I’d heard Chef was a great teacher and I loved the class so I kept taking it.”
-                Chef Feller hopes that students come out of the cooking class with a better appreciation for the art.
-                “If every student walks out of the kitchen classroom with more self confidence in their culinary skills, an expanded palette, and desire to do more cooking, it's a win,” Feller said “Cooking in the kitchen classroom is very different from cooking at home; it involves teamwork, conflict, resolution. Then there is also time management, sequencing, reading comprehension, and ability to follow directions.”
-                Cooking is a class that may start just because students want food, but grows and builds a love for cooking and a sense of community with your classmates. It especially lets you interact with people in other grades because most classes wouldn’t normally allow for those interactions.
+            <p>Article Text
              </p>
         </article>
         <article>
@@ -112,17 +92,6 @@
             <p>Article content goes here...</p>
         </article>  
     </section>
-
-        <div class="statistics">
-            <h3><b>Big Brother Gifts:</b></h3>
-            <ul>
-                <li>Chocolate Ration: <span>+20%</span></li>
-                <li>Bread Ration: <span>+15%</span></li>
-                <li>Bread Ration: <span>+15%</span></li>
-                <li>Bread Ration: <span>+15%</span></li>
-                <li>Bread Ration: <span>+15%</span></li>
-            </ul>
-        </div>
     </main>
 
     <div id="big-brother-overlay" class="overlay">
@@ -142,6 +111,22 @@
         <p>Copyright &#169 Oceania Oracle by Will Cahill. All Rights reserved.</p>
     </footer>
 
-    <script src="OceaniaOracle.js"></script>
+    <script src="ClaudeNYT.js"></script>
+    <script>
+        $(document).ready(function() {
+          animatePropaganda();
+        });
+    
+        function animatePropaganda() {
+          $("#propaganda").animate({
+            left: '+=150px'
+          }, 1000, function() {
+            $(this).animate({
+              left: '-=300px'
+            }, 1000, animatePropaganda);
+          });
+        }
+      </script>
+    
 </body>
 </html>
