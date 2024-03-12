@@ -35,7 +35,7 @@ body {
     font-size: 5rem;
     font-weight: 1000;
     text-align: center;
-    margin-top: px;
+    margin-top: 10px;
 }
 
 main {
@@ -48,43 +48,42 @@ main {
     flex: 2;
 }
 
-.principles{
+.principles {
     position: relative;
-    white-space: nowrap;
+    flex: 1;
     left: 2.5%;
     font-family: 'Times New Roman';  
-    font-size: 0.25em;
-}
-
-.principles p {
-    margin-top:-20px ;
-    margin-left: 50px;
-    text-decoration: none;
-    font-weight: 5;
+    font-size: 1.5em;
 }
 
 article {
     margin-bottom: 2rem;
-    margin: 2rem;
     padding: 1rem;
     border: 1px solid #fff;
 }
 
 article h2 {
-    margin-bottom: 0.25rem;
-    text-align: center;
-}
-
-article p {
-    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 article img {
-    margin-top: 1rem;
-    padding: 2%;
     max-width: 100%;
     max-height: 100%;
     margin-bottom: 1rem;
+}
+
+.statistics {
+    margin-left: 2%;
+    font-family: 'Times New Roman';
+    font-size: 1.5em;
+}
+
+.statistics h3 {
+    margin-bottom: 1rem;
+}
+
+statistics li {
+    list-style-type: none;
 }
 
 nav ul {
@@ -174,34 +173,6 @@ nav button {
 footer {
     background-color: #000;
     color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
-.overlay-content h2 {
-    color: #000;
-}
-
-.overlay-content p {
-    color: #000;
-    margin-bottom: 1rem;
-}
-
-.overlay img{
-    width: 80%;
-}
-
-.overlay-content button {
-    background-color: #000;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    cursor: pointer;
-}
-
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
 }
