@@ -177,3 +177,31 @@ footer {
     padding: 1rem;
     text-align: center;
 }
+
+.overlay-content h2 {
+    color: #000;
+}
+
+.overlay-content p {
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.overlay img{
+    width: 80%;
+}
+
+.overlay-content button {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
