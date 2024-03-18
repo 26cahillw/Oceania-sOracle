@@ -12,6 +12,8 @@ internalLinks.forEach(link => {
   });
 });
 
+
+
 const languageToggleLinks = document.querySelectorAll('.language-selector a'); 
 const overlay = document.getElementById('big-brother-overlay');
 const closeOverlay = document.getElementById('close-overlay');
