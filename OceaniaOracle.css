@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -38,6 +40,11 @@ body {
     margin-top: 8px;
 }
 
+.logo h1 a {
+    color: white;
+    text-decoration: none;
+}
+
 main {
     display: flex;
     justify-content: space-between;
@@ -45,11 +52,12 @@ main {
 }
 
 .article {
+    margin: 5%;
     flex: 2;
 }
 
 hr {
-    width: 95%;
+    width: 90%;
     margin: auto;
     display: flex;
 }
@@ -57,9 +65,10 @@ hr {
 .principles {
     position: relative;
     flex: 1;
-    left: 2.5%;
+    margin-left: 5%;
+    margin-right:5%;
     font-family: 'Times New Roman';  
-    font-size: 0.98em;
+    font-size: 1.03275vw;
     text-decoration: none;
 }
 
@@ -91,20 +100,6 @@ article img {
     text-align: center;
     font-size: 3rem;
     padding: 1%;
-}
-
-.statistics {
-    margin-left: 2%;
-    font-family: 'Times New Roman';
-    font-size: 1.5em;
-}
-
-.statistics h3 {
-    margin-bottom: 1rem;
-}
-
-statistics li {
-    list-style-type: none;
 }
 
 nav ul {
@@ -177,6 +172,7 @@ nav button {
 .overlay-content p {
     color: #000;
     margin-bottom: 1rem;
+    font-size: 20px;
 }
 
 .overlay img{
@@ -197,3 +193,11 @@ footer {
     padding: 2rem;
     text-align: center;
 }
+
+.redacted-overlay {
+    width: 100px;
+    height: 100px;
+    color: black;
+}
+
+
