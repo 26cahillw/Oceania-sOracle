@@ -32,6 +32,15 @@ body {
     margin: 0 10px;
 }
 
+.logo {
+    color: white;
+    text-decoration: none;
+}
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
 .logo h1 {
     font-family: 'Playfair Display';
     font-size: 5rem;
