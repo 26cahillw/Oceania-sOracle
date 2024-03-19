@@ -1,5 +1,7 @@
-
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 * {
     margin: 0;
     padding: 0;
@@ -32,23 +34,12 @@ body {
     margin: 0 10px;
 }
 
-.logo {
-    color: white;
-    text-decoration: none;
-}
-.logo a {
-    color: white;
-    text-decoration: none;
-}
-
 .logo h1 {
     font-family: 'Playfair Display';
     font-size: 5rem;
     font-weight: 1000;
     text-align: center;
     margin-top: 8px;
-    color: white;
-    text-decoration: none;
 }
 
 .logo h1 a {
@@ -67,6 +58,10 @@ main {
     flex: 2;
 }
 
+.article p {
+    display: inline-block;
+}
+
 hr {
     width: 90%;
     margin: auto;
@@ -83,19 +78,15 @@ hr {
     text-decoration: none;
 }
 
-article {
+.article-box {
     margin-bottom: 2rem;
     padding: 1rem;
     border: 1px solid #fff;
 }
 
-article h2 {
-    text-align: center;
-    margin-bottom: 0.5rem;
-}
-
 article p {
     text-align: left;
+    display: inline-block;
 }
 
 article img {
@@ -212,3 +203,24 @@ footer {
     color: black;
 }
 
+.swap {
+    display: inline-block;
+    text-align: justify;
+}
+
+.hover {
+    color: black;
+}
+
+.hover:hover {
+    animation: reveal 0s forwards 0s;
+}
+
+@keyframes reveal {
+    0% {
+        color: black;
+    }
+   100% {
+        color: white;
+   }
+}
